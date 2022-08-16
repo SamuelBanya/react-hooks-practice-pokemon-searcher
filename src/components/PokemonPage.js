@@ -9,7 +9,7 @@ function PokemonPage() {
   const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:3001/pokemon")
+    fetch("https://pokemon-searcher-jsonserver.herokuapp.com/pokemon")
       .then((response) => response.json())
       .then(setPokemon);
   }, []);

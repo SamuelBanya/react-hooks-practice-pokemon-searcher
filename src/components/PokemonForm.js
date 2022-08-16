@@ -26,7 +26,7 @@ function PokemonForm({ onAddPokemon }) {
       },
     };
 
-    fetch("http://localhost:3001/pokemon", {
+    fetch("https://pokemon-searcher-jsonserver.herokuapp.com/pokemon", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
