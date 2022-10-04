@@ -26,13 +26,13 @@ function PokemonForm({ onAddPokemon }) {
       },
     };
 
-    fetch("https://pokemon-searcher-jsonserver.herokuapp.com/pokemon", {
+    fetch("https://react-hooks-practice-pokemon-searcher.onrender.com/pokemon", {
       method: "POST",
       headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(newPokemon),
-    })
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(newPokemon),
+      })
       .then((response) => response.json())
       .then(onAddPokemon);
   }
